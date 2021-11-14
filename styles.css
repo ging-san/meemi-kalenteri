@@ -1,0 +1,275 @@
+:root {
+    background-image: url(joulupuu.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    border-bottom: solid;
+    border-color: white;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    border: solid;
+    border-color: white;
+}
+
+.countdown {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 2rem;
+}
+
+h1 {
+    color: white;
+    background-color: transparent;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    font-size: 24px;
+    text-align: center;
+}
+
+.kalenteri {
+    color: red;
+}
+
+.calendar {
+    width: 50%;
+}
+p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    font-size: 28px;
+    text-align: center;
+}
+span {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+footer a:link {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.kuva {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+/* navbar tyylit */
+.vasen {
+    float: right;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+    font-family: 'Birthstone', cursive;
+    font-size: 40px;
+}
+
+/* link hovers */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* aktiivinen navbar linkki */
+.topnav a.active {
+    font-family: 'Birthstone', cursive;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+}
+
+/* burgerin piilotus */
+.topnav .icon {
+    display: none;
+}
+
+/* mobiili */
+@media only screen and
+(max-width: 750px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .kuva {
+        width: 90%;
+    }
+
+    h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* keskikokoiset */
+@media only screen and
+(min-width: 751px) {
+
+    body {
+        width: 85%;
+        margin: auto;
+    }
+
+    .flex_container {
+        display: flex;
+    }
+
+    .flex_item {
+        flex: 1;
+    }
+
+    .flex_item {
+        padding: 20px;
+    }
+}
+
+/* isot */
+@media only screen and
+(min-width: 1024px) {
+
+    .flex_container {
+        display: flex;
+    }
+
+    .flex_item {
+        flex: 1;
+    }
+
+    /* modalin css tästä alasapäin*/
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
